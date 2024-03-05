@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-s3": "3.437.0",
+    "@aws-sdk/s3-request-presigner": "3.437.0",
+    "@supabase/supabase-js": "^2.39.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*"
+  },
+  "license": "MIT",
+  "main": "./index.ts",
+  "name": "storage",
+  "scripts": {
+    "lint": "eslint \"**/*.ts*\""
+  },
+  "types": "./**/.ts",
+  "version": "0.0.0"
+}

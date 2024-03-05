@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@trpc/server": "11.0.0-next-beta.303",
+    "auth": "workspace:*",
+    "database": "workspace:*",
+    "mail": "workspace:*",
+    "next": "14.1.1",
+    "openai": "^4.28.4",
+    "storage": "workspace:*",
+    "superjson": "^2.2.1",
+    "utils": "workspace:*",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.61",
+    "encoding": "^0.1.13",
+    "eslint-config-custom": "workspace:*",
+    "prisma": "^5.10.2",
+    "tsconfig": "workspace:*"
+  },
+  "license": "MIT",
+  "main": "./index.tsx",
+  "name": "api",
+  "scripts": {
+    "lint": "eslint \"**/*.ts*\""
+  },
+  "types": "./**/.tsx",
+  "version": "0.0.0"
+}

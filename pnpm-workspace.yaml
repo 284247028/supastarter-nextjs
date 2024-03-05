@@ -1,0 +1,11 @@
+packages:
+  - apps/web
+  - packages/api
+  - packages/auth
+  - packages/database
+  - packages/mail
+  - packages/config/eslint-config-custom
+  - packages/config/tsconfig
+  - packages/config/tailwind
+  - packages/storage
+  - packages/utils

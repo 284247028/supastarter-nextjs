@@ -1,0 +1,145 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator zod {
+  provider         = "zod-prisma-types"
+  output           = "../src/zod"
+  createInputTypes = false
+  addIncludeType   = false
+  addSelectType    = false
+}
+
+enum UserRole {
+  USER
+  ADMIN
+}
+
+model User {
+  id                 String                  @id @default(cuid())
+  email              String                  @unique
+  emailVerified      Boolean                 @default(false)
+  role               UserRole                @default(USER)
+  name               String?
+  avatarUrl          String?
+  createdAt          DateTime                @default(now())
+  hashedPassword     String?
+  oauthAccounts      UserOauthAccount[]
+  sessions           UserSession[]
+  memberships        TeamMembership[]
+  verificationtokens UserVerificationToken[]
+  oneTimePasswords   UserOneTimePassword[]
+}
+
+model UserSession {
+  id             String   @id
+  userId         String
+  expiresAt      DateTime
+  impersonatorId String?
+  user           User     @relation(references: [id], fields: [userId], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model UserOauthAccount {
+  id             String @id @default(cuid())
+  providerId     String
+  providerUserId String
+  userId         String
+  user           User   @relation(references: [id], fields: [userId], onDelete: Cascade)
+
+  @@unique([providerId, providerUserId])
+}
+
+model UserVerificationToken {
+  id      String   @id @default(cuid())
+  userId  String
+  user    User     @relation(references: [id], fields: [userId], onDelete: Cascade)
+  token   String
+  expires DateTime
+
+  @@index([userId])
+}
+
+enum UserOneTimePasswordType {
+  SIGNUP
+  LOGIN
+  PASSWORD_RESET
+}
+
+model UserOneTimePassword {
+  id         String                  @id @default(cuid())
+  userId     String
+  user       User                    @relation(references: [id], fields: [userId], onDelete: Cascade)
+  code       String
+  type       UserOneTimePasswordType
+  identifier String
+  expires    DateTime
+
+  @@index([userId])
+}
+
+model Team {
+  id           String           @id @default(cuid())
+  name         String
+  avatarUrl    String?
+  memberships  TeamMembership[]
+  subscription Subscription?
+  invitations  TeamInvitation[]
+}
+
+enum TeamMemberRole {
+  MEMBER
+  OWNER
+}
+
+model TeamMembership {
+  id        String         @id @default(cuid())
+  team      Team           @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  teamId    String
+  user      User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String
+  role      TeamMemberRole @default(MEMBER)
+  isCreator Boolean        @default(false)
+
+  @@unique([teamId, userId])
+}
+
+model TeamInvitation {
+  id        String         @id @default(cuid())
+  team      Team           @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  teamId    String
+  email     String
+  role      TeamMemberRole @default(MEMBER)
+  createdAt DateTime       @default(now())
+  expiresAt DateTime       @updatedAt
+
+  @@unique([teamId, email])
+}
+
+enum SubscriptionStatus {
+  TRIALING
+  ACTIVE
+  PAUSED
+  CANCELED
+  PAST_DUE
+  UNPAID
+  INCOMPLETE
+  EXPIRED
+}
+
+model Subscription {
+  id              String             @id
+  team            Team               @relation(fields: [teamId], references: [id])
+  teamId          String             @unique
+  customerId      String
+  status          SubscriptionStatus
+  planId          String
+  variantId       String
+  nextPaymentDate DateTime?
+}

@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@prisma/client": "^5.10.2",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.24",
+    "dotenv-cli": "^7.3.0",
+    "eslint-config-custom": "workspace:*",
+    "prisma": "^5.10.2",
+    "tsconfig": "workspace:*",
+    "zod-prisma-types": "^3.1.6"
+  },
+  "license": "MIT",
+  "main": "./index.tsx",
+  "name": "database",
+  "scripts": {
+    "lint": "eslint \"**/*.ts*\"",
+    "db:generate": "prisma generate",
+    "db:push": "dotenv -c -e ../../.env -- prisma db push --skip-generate",
+    "db:studio": "dotenv -c -e ../../.env -- prisma studio"
+  },
+  "types": "./**/.tsx",
+  "version": "0.0.0"
+}

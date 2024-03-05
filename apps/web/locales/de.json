@@ -1,0 +1,377 @@
+{
+  "auth": {
+    "continueWithProvider": "Weiter mit {provider}",
+    "forgotPassword": {
+      "backToSignin": "Zurück zum Login",
+      "email": "E-Mail",
+      "hints": {
+        "linkNotSent": {
+          "message": "Es tut uns leid, aber wir konnten keinen Link zum Zurücksetzen des Passworts senden. \nBitte versuche es später noch einmal.",
+          "title": "Link nicht gesendet"
+        },
+        "linkSent": {
+          "message": "Wir haben dir einen Link zum Fortfahren gesendet. \nBitte überprüfe deinen Posteingang.",
+          "title": "Link gesendet"
+        }
+      },
+      "message": "Bitte gib deine E-Mail-Adresse ein und wir senden dir einen Link zum Zurücksetzen deines Passworts.",
+      "submit": "Link senden",
+      "title": "Hast du dein Passwort vergessen?"
+    },
+    "login": {
+      "createAnAccount": "Ein Konto erstellen",
+      "dontHaveAnAccount": "Du hast noch kein Konto?",
+      "email": "E-Mail",
+      "forgotPassword": "Passwort vergessen?",
+      "hints": {
+        "emailNotVerified": {
+          "message": "Bitte überprüfe deine E-Mail-Adresse, bevor du dich anmeldest. Überprüfe deinen Posteingang auf die Bestätigungsmail.",
+          "title": "E-Mail nicht bestätigt"
+        },
+        "invalidCredentials": {
+          "message": "Es tut uns leid, aber die von dir eingegebenen Anmeldeinformationen sind ungültig. \nBitte versuche es erneut.",
+          "title": "Ungültige Anmeldeinformationen"
+        },
+        "linkNotSent": {
+          "message": "Es tut uns leid, aber wir konnten dir keinen magischen Link senden. \nBitte versuche es später noch einmal.",
+          "title": "Link nicht gesendet"
+        },
+        "linkSent": {
+          "message": "Wir haben dir einen Link zum Fortfahren gesendet. \nBitte überprüfe deinen Posteingang.",
+          "title": "Link gesendet"
+        }
+      },
+      "password": "Passwort",
+      "sendMagicLink": "Magischen Link senden",
+      "submit": "Anmelden",
+      "subtitle": "Bitte gib deine Zugangsdaten ein, um dich anzumelden.",
+      "title": "Willkommen zurück"
+    },
+    "setup": {},
+    "signup": {
+      "alreadyHaveAccount": "Du hast bereits ein Konto?",
+      "email": "Email",
+      "hints": {
+        "signupFailed": {
+          "message": "Es tut uns leid, aber wir konnten dein Konto nicht erstellen. \nBitte versuche es später noch einmal.",
+          "title": "Konto konnte nicht erstellt werden"
+        },
+        "verifyEmail": {
+          "message": "Wir haben dir einen Link zur Bestätigung deiner E-Mail-Adresse gesendet. \nBitte überprüfe deinen Posteingang.",
+          "title": "Bestätige deine E-Mail"
+        }
+      },
+      "message": "Wir freuen uns, dass du dich uns anschließen möchtest. \nBitte fülle das untenstehende Formular aus, um dein Konto zu erstellen.",
+      "name": "Name",
+      "password": "Passwort",
+      "passwordHint": "Bitte gib mindestens 8 Zeichen ein.",
+      "signIn": "Anmelden",
+      "submit": "Benutzerkonto erstellen",
+      "title": "Ein Konto erstellen"
+    },
+    "teamInvitation": {
+      "description": "Du wurdest eingeladen, einem Team beizutreten. \nWenn du dich anmeldest oder registrierst, nimmst du automatisch die Einladung an und trittst dem Team bei.",
+      "title": "Teameinladung annehmen"
+    },
+    "verifyOtp": {
+      "errors": {
+        "otpTooShort": "Das Einmalpasswort ist zu kurz."
+      },
+      "hints": {
+        "verificationFailed": {
+          "message": "Es tut uns leid, das von dir eingegebene Passwort ist ungültig. \nBitte versuche es erneut.",
+          "title": "Ungültiges Einmalpasswort"
+        }
+      },
+      "message": "Du hast Post! \nBitte überprüfe deinen Posteingang auf das Einmalpasswort, das wir dir gesendet haben. \nDu kannst auch auf den Link in der E-Mail klicken und du wirst automatisch weitergeleitet.",
+      "otp": "Einmaliges Passwort",
+      "submit": "Weitermachen",
+      "title": "Bestätige deine E-Mail"
+    },
+    "confirmation": {
+      "close": "Schließe diesen Tab",
+      "message": "Du kannst diesen Tab jetzt schließen und in dem ursprünglichen Tab fortfahren.",
+      "title": "Du wurdest eingeloggt!"
+    },
+    "invalidToken": {
+      "message": "Der Link ist entweder ungültig oder abgelaufen. \nBitte versuche es erneut, dich anzumelden.",
+      "title": "Ungültiger Token"
+    }
+  },
+  "blog": {
+    "description": "In diesem Blog schreibe ich über alles mögliche.",
+    "title": "Mein toller Blog"
+  },
+  "common": {
+    "locales": {},
+    "menu": {
+      "blog": "Blog",
+      "dashboard": "Dashboard",
+      "login": "Anmelden",
+      "pricing": "Preise"
+    },
+    "confirmation": {
+      "cancel": "Abbrechen",
+      "confirm": "Bestätigen"
+    }
+  },
+  "createTeam": {
+    "name": "Teamname",
+    "notifications": {
+      "error": "Es tut uns leid, aber wir konnten dein Team nicht erstellen. \nBitte versuche es später noch einmal.",
+      "success": "Dein Team wurde erstellt. \nDu kannst jetzt Mitglieder einladen."
+    },
+    "submit": "Team erstellen",
+    "title": "Neues Team erstellen"
+  },
+  "dashboard": {
+    "menu": {
+      "dashboard": "Dashboard",
+      "settings": "Einstellungen",
+      "aiDemo": "AI-Demo"
+    },
+    "sidebar": {
+      "createTeam": "Erstelle ein neues Team"
+    },
+    "subtitle": "Sieh dir die neuesten Statistiken deines großartigen Unternehmens an.",
+    "welcome": "Willkommen {name}!"
+  },
+  "newsletter": {
+    "email": "Email",
+    "hints": {
+      "success": {
+        "message": "Danke, dass du unseren Newsletter abonniert hast. \nWir werden dich auf dem Laufenden halten.",
+        "title": "Erfolgreich angemeldet!"
+      }
+    },
+    "submit": "Abonnieren",
+    "subtitle": "Gehöre zu den Ersten, die Zugriff auf supastarter.nextjs erhalten.",
+    "title": "Erhalte frühen Zugang"
+  },
+  "pricing": {
+    "description": "Wähle das passende Paket für dich aus.",
+    "month": "Monat",
+    "monthly": "Monatlich",
+    "subscribe": "Abonnieren",
+    "title": "Preise",
+    "year": "Jahr",
+    "yearly": "Jährlich"
+  },
+  "settings": {
+    "account": {
+      "changeEmail": {
+        "description": "Gib eine neue E-Mail ein und klicke auf Speichern.",
+        "note": "Du wirst deine neue E-Mail bestätigen müssen, bevor sie aktiviert wird.",
+        "title": "Deine E-Mail"
+      },
+      "changeName": {
+        "title": "Dein Name"
+      },
+      "changePassword": {
+        "description": "Um dein Passwort zu ändern, gib dein neues Passwort ein und klicke auf Speichern.",
+        "note": "Bitte gib mindestens 8 Zeichen ein.",
+        "title": "Dein Passwort"
+      },
+      "title": "Account",
+      "deleteAccount": {
+        "confirmation": "Sind Sie sicher, dass Sie Ihr Konto löschen möchten?",
+        "description": "Lösche dein Konto dauerhaft. \nSobald Du dein Konto gelöscht hast, gibt es kein Zurück mehr. \nBitte sei dir sicher, bevor du hier weitermachst.",
+        "submit": "Konto löschen",
+        "title": "Konto löschen"
+      },
+      "avatar": {
+        "description": "Um deinen Avatar zu ändern, klicke auf das Bild auf der rechten Seite dieses Blocks und wähle eine Datei von deinem Computer zum Hochladen aus.",
+        "title": "Dein Avatar"
+      }
+    },
+    "billing": {
+      "subscription": {
+        "cancel": "Kündigen",
+        "currentPlan": "Dein aktueller Plan",
+        "currentSubscription": "Dein aktuelles Abonnement",
+        "endsOn": "Dein Abonnement endet am <strong>{nextPaymentDate, date, medium}</strong>",
+        "freePlan": {
+          "title": "Free"
+        },
+        "month": "Monat",
+        "monthly": "monatlich",
+        "nextPayment": "Deine nächste Zahlung ist am <strong>{nextPaymentDate, date, medium}</strong> fällig",
+        "pauseSubscription": "Abonnement pausieren",
+        "resumeSubscription": "Abonnement fortsetzen",
+        "status": {
+          "active": "Aktiv",
+          "canceled": "Gekündigt",
+          "expired": "Ausgelaufen",
+          "paused": "Pausiert",
+          "incomplete": "Unvollständig",
+          "past_due": "Überfällig",
+          "trialing": "Testversion",
+          "unpaid": "Unbezahlt"
+        },
+        "subscribe": "Abonnieren",
+        "switchToPlan": "Zu diesem Plan wechseln",
+        "updateBillingDetails": "Zahlungsdetails aktualisieren",
+        "upgradePlan": "Upgrade deinen Plan",
+        "year": "Jahr",
+        "yearly": "jährlich",
+        "yourSubscription": "Du hast den Plan <strong>{plan}</strong> ({price}/{interval}) abonniert.",
+        "resume": "Abonnement fortsetzen"
+      },
+      "title": "Zahlung",
+      "cancelSubscription": {
+        "notifications": {
+          "error": {
+            "title": "Das Abonnement konnte nicht gekündigt werden"
+          },
+          "success": {
+            "title": "Das Abonnement wurde gekündigt"
+          }
+        }
+      },
+      "resumeSubscription": {
+        "notifications": {
+          "error": {
+            "title": "Das Abonnement konnte nicht fortgesetzt werden"
+          },
+          "success": {
+            "title": "Das Abonnement wurde wieder aufgenommen"
+          }
+        }
+      },
+      "createCustomerPortal": {
+        "label": "Rechnungsdetails verwalten",
+        "notifications": {
+          "error": {
+            "title": "Es konnte keine Kundenportalsitzung erstellt werden. \nBitte versuche es erneut."
+          }
+        }
+      },
+      "pauseSubscription": {
+        "label": "Pausieren",
+        "notifications": {
+          "error": {
+            "title": "Das Abonnement konnte nicht pausiert werden. \nBitte versuche es erneut."
+          },
+          "success": {
+            "title": "Das Abonnement wurde pausiert."
+          }
+        }
+      }
+    },
+    "notifications": {
+      "emailUpdated": "Deine E-Mail wurde geändert.",
+      "nameUpdated": "Dein Name wurde geändert.",
+      "passwordUpdated": "Dein Passwort wurde aktualisiert.",
+      "passwordNotUpdated": "Wir konnten dein Passwort nicht aktualisieren. \nBitte versuche es erneut.",
+      "teamNameNotUpdated": "Wir konnten deinen Teamnamen nicht aktualisieren. \nBitte versuche es später noch einmal.",
+      "teamNameUpdated": "Dein Teamname wurde aktualisiert.",
+      "nameUpdateFailed": "Dein Name konnte nicht aktualisiert werden. \nBitte versuche es später noch einmal.",
+      "accountDeleted": "Dein Account wurde gelöscht.",
+      "accountNotDeleted": "Wir konnten Dein Konto nicht löschen. \nBitte versuche es später noch einmal.",
+      "teamDeleted": "Dein Team wurde gelöscht.",
+      "teamNotDeleted": "Wir konnten das Team nicht löschen. \nBitte versuche es später noch einmal.",
+      "avatarNotUpdated": "Wir konnten deinen Avatar nicht aktualisieren. \nBitte versuche es erneut.",
+      "avatarUpdated": "Dein Avatar wurde aktualisiert."
+    },
+    "save": "Speichern",
+    "subtitle": "Verwalte deinen Account und deine Anwendungseinstellungen.",
+    "team": {
+      "changeName": {
+        "description": "Gib einen neuen Namen ein und klicke auf Speichern, um ihn zu aktualisieren.",
+        "teamUrl": "Deine Team-URL lautet <strong>{url}</strong>.",
+        "title": "Teamname"
+      },
+      "members": {
+        "invite": "Lade ein neues Mitglied ein",
+        "inviteMember": {
+          "email": "Email",
+          "role": "Rolle",
+          "submit": "Einladen",
+          "title": "Neues Mitglied einladen",
+          "notifications": {
+            "error": {
+              "description": "Wir konnten das Mitglied nicht einladen. \nBitte versuche es später noch einmal.",
+              "title": "Mitglied konnte nicht eingeladen werden"
+            },
+            "success": {
+              "description": "Das Mitglied wurde eingeladen.",
+              "title": "Mitglied eingeladen"
+            }
+          }
+        },
+        "removeMember": "Mitglied entfernen",
+        "roles": {
+          "member": "Mitglied",
+          "owner": "Eigentümer"
+        },
+        "title": "Mitglieder",
+        "activeMembers": "Aktive Mitglieder",
+        "invitations": {
+          "email": "Email",
+          "empty": "Du hast noch keine Mitglieder eingeladen.",
+          "revoke": "Einladung widerrufen"
+        },
+        "pendingInvitations": "Ausstehende Einladungen",
+        "notifications": {
+          "removeMember": {
+            "error": {
+              "description": "Das Mitglied konnte nicht aus deinem Team entfernt werden. \nBitte versuche es erneut."
+            },
+            "loading": {
+              "description": "Mitglied wird aus dem Team entfernt..."
+            },
+            "success": {
+              "description": "Das Mitglied wurde erfolgreich aus deinem Team entfernt."
+            }
+          },
+          "revokeInvitation": {
+            "error": {
+              "description": "Die Einladung konnte nicht widerrufen werden. \nBitte versuche es später noch einmal."
+            },
+            "loading": {
+              "description": "Einladung wird zurückgezogen..."
+            },
+            "success": {
+              "description": "Die Einladung wurde widerrufen."
+            }
+          },
+          "updateMembership": {
+            "error": {
+              "description": "Die Teammitgliedschaft konnte nicht aktualisiert werden. \nBitte versuche es erneut."
+            },
+            "loading": {
+              "description": "Mitgliedschaft wird aktualisiert..."
+            },
+            "success": {
+              "description": "Die Mitgliedschaft wurde erfolgreich aktualisiert"
+            }
+          }
+        }
+      },
+      "subtitle": "Verwalte deine Teameinstellungen und Mitglieder",
+      "title": "Team",
+      "deleteTeam": {
+        "confirmation": "Bist du sicher, dass du dein Team löschen möchten?",
+        "description": "Lösche dein Team dauerhaft. \nSobald du dein Team gelöscht hast, gibt es kein Zurück mehr. \nBitte sei dir sicher, bevor du hier weitermachst.",
+        "submit": "Team löschen",
+        "title": "Team löschen"
+      }
+    },
+    "title": "Einstellungen",
+    "menu": {
+      "account": {
+        "general": "Allgemein",
+        "title": "Konto"
+      },
+      "team": {
+        "billing": "Abrechnung",
+        "general": "Allgemein",
+        "members": "Mitglieder",
+        "title": "Team"
+      }
+    },
+    "sections": {
+      "team": "Team"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "extends": "tsconfig/nextjs.json",
+  "compilerOptions": {
+    "plugins": [{ "name": "next" }],
+    "paths": {
+      "@config": ["./config"],
+      "@analytics": ["./modules/analytics"],
+      "@marketing/*": ["./modules/marketing/*"],
+      "@saas/*": ["./modules/saas/*"],
+      "@ui/*": ["./modules/ui/*"],
+      "@i18n": ["./modules/i18n"],
+      "@shared/*": ["./modules/shared/*"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.cjs",
+    "**/*.mjs",
+    ".next/types/**/*.ts",
+    ".contentlayer/generated",
+    "../../packages/auth/lucia.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}

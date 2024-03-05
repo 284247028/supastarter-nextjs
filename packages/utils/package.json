@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*"
+  },
+  "license": "MIT",
+  "main": "./index.tsx",
+  "name": "utils",
+  "scripts": {
+    "lint": "eslint \"**/*.ts*\""
+  },
+  "types": "./**/.tsx",
+  "version": "0.0.0"
+}

@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "@react-email/components": "^0.0.15",
+    "@react-email/render": "^0.0.12",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^6.9.11",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-email": "^2.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@types/mjml": "^4.7.2",
+    "@types/node": "20.11.24",
+    "@types/nodemailer": "^6.4.11",
+    "@types/react": "18.2.61",
+    "eslint-config-custom": "workspace:*",
+    "tailwind-config": "workspace:*",
+    "tsconfig": "workspace:*"
+  },
+  "license": "MIT",
+  "main": "./index.ts",
+  "name": "mail",
+  "scripts": {
+    "preview": "email dev --port 3005",
+    "export": "email export"
+  },
+  "types": "./index.ts",
+  "version": "0.1.0"
+}
